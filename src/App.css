@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +35,226 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.cardy{
+  width: 350px !important;
+  height: 250px !important;
+  /* background-color: aliceblue; */
+  /* border: 2px solid black; */
+  color: black;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  cursor: pointer;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  user-select: none;
+  justify-content: space-around !important;
+  /* margin-top: 10px; */
+  overflow: hidden;
+}
+.cardy:hover
+{
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  transition: 100ms ease-in;
+
+  .cardText{
+    background-color: white;
+    color: black !important;
+    transition: 100ms ease-in;
+  }
+
+}
+.cardRow{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 20px;
+}
+
+.cardTitle{
+  max-height: 50px;
+  overflow: hidden;
+  
+
+}
+.cardText{
+  max-height: 100px;
+  overflow: hidden;
+  border: 1px solid aliceblue;
+  background-color: aliceblue;
+}
+
+.cardBtn{
+  max-height: 50px;
+  
+}
+
+.fonts{
+  margin-right: 30px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.passInput{
+  margin-right: 10px;
+  /* padding: 5px; */
+  height: 35px;
+  /* margin-top: 2px; */
+  
+}
+.btnTilt{
+  height: 35px !important;
+  /* padding: 5px !important; */
+  
+  
+  
+}
+input{
+  height: 35px;
+  padding: 5px 5px;
+
+}
+
+.passW{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+.menu{
+  width: 80%;
+  position: fixed;
+  height: 100vh;
+  background-color: aliceblue;
+  list-style: none;
+  left: -100%;
+  z-index: 1;
+}
+.menu ul li{
+  list-style: none;
+  padding: 10px 0px;
+  font-size: 18px;
+}
+li{
+  width: 250px;
+}
+.menu li:hover{
+  background: black;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.45s ease-in;
+}
+.activeMenu{
+  left: 0%;
+  top: 10px;
+  z-index: 1000;
+  transition: 0.7s ease-in-out;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.micon{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: black;
+  color: white;
+}
+
+.fontz{
+  font-size: 25px;
+  cursor: pointer; 
+}
+
+
+.modalOverlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  z-index: 10;
+  display: none;
+}
+.myModal{
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  position: fixed;
+  z-index: 11;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  top: -500%;
+  transition: 0.5s ease-in-out;
+}
+.showBackDrop{
+  display: block;
+}
+.showModal{
+  top: 50%;
+}
+.cross{
+  position: fixed;
+  right: 15px;
+  top: 15px;
+}
+.myModal h3{
+  margin: 10px;
+}
+
+.faqOuter{
+  width: 1320px;
+  margin: auto;
+}
+.faqItems{
+  /* border: 1px solid red; */
+  margin-bottom: 20px;
+ 
+}
+.faqItems h2{
+  margin: 0px;
+  padding: 10px;
+  background-color: #282c34;
+  color: white;
+  font-size: 25px;
+  text-align: left;
+}
+.faqItems p{
+  
+  text-align: left;
+  /* padding: 10px;  */
+  height: 0px;
+  transform: scaleY(0);
+  margin: 0px;
+
+}
+.showP{
+  transform: scaleY(100%) !important;
+  height: 50px !important;
+  background-color: aliceblue !important;
+  padding: 10px !important;
+  font-weight: 600;
+  transition: 0.5s ease-in-out;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.fontz1{
+  color: white;
+  font-size: 20px;
+  position: relative;
+  left: 600px;
+  top: 40px;
+  z-index: 10;
+  cursor: pointer;
 }
